@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-17T16:12:49 AST" name="Default suite" finished-at="2024-02-17T16:12:49 AST" duration-ms="48">
+    <groups>
+    </groups>
+    <test started-at="2024-02-17T16:12:49 AST" name="Default test" finished-at="2024-02-17T16:12:49 AST" duration-ms="48">
+      <class name="JavaStreams">
+        <test-method signature="regular()[pri:0, instance:JavaStreams@51e69659]" started-at="2024-02-17T16:12:49 AST" name="regular" finished-at="2024-02-17T16:12:49 AST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- regular -->
+        <test-method signature="streamFilter()[pri:0, instance:JavaStreams@51e69659]" started-at="2024-02-17T16:12:49 AST" name="streamFilter" finished-at="2024-02-17T16:12:49 AST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- streamFilter -->
+        <test-method signature="streamMap()[pri:0, instance:JavaStreams@51e69659]" started-at="2024-02-17T16:12:49 AST" name="streamMap" finished-at="2024-02-17T16:12:49 AST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- streamMap -->
+      </class> <!-- JavaStreams -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
