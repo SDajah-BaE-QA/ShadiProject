@@ -18,7 +18,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class UploadDownload {
-	public static void main(String[] args) throws IOException { // TODO Auto-generated method stub
+	public static void main(String[] args) throws IOException { 
 		String fruitName = "Apple";
 		String updatedValue = "603";
 		String fileName = "/Users/rahulshetty/downloads/download.xlsx";
@@ -51,31 +51,15 @@ public class UploadDownload {
 	}
 
 	private static boolean updateCell(String fileName, int row, int col, String updatedValue) throws IOException 
-	{ // TODO
-		// Auto-generated
-		// method
+	{ 
 		 ArrayList<String> a=new ArrayList<String>();
-		 FileInputStream
-		 fis=new
-		 FileInputStream(fileName);
-		 XSSFWorkbook
-		 workbook=new
-		 XSSFWorkbook(fis);
-		 XSSFSheet
-		 sheet=workbook.getSheet("Sheet1");
-		 Row
-		 rowField
-		 =
-		 sheet.getRow(row-1);
-		 Cell
-		 cellField
-		 =
-		 rowField.getCell(col-1);
+		 FileInputStream fis=new FileInputStream(fileName);
+		 XSSFWorkbook workbook=new XSSFWorkbook(fis);
+		 XSSFSheet sheet=workbook.getSheet("Sheet1");
+		 Row rowField = sheet.getRow(row-1);
+		 Cell cellField = rowField.getCell(col-1);
 		 cellField.setCellValue(updatedValue);
-		 FileOutputStream
-		 fos=
-		 new
-		 FileOutputStream(fileName);
+		 FileOutputStream fos= new FileOutputStream(fileName);
 		 workbook.write(fos);
 		 workbook.close();
 		 fis.close();
@@ -84,7 +68,6 @@ public class UploadDownload {
 		 }
 
 	private static int getRowNumber(String fileName, String text) throws IOException {
-		// TODO Auto-generated method stub
 		ArrayList<String> a = new ArrayList<String>();
 		FileInputStream fis = new FileInputStream(fileName);
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
@@ -108,11 +91,9 @@ public class UploadDownload {
 		return rowIndex;
 	}
 
-	private static int getColumnNumber(String fileName, String colName) throws IOException { // TODO Auto-generated
+	private static int getColumnNumber(String fileName, String colName) throws IOException { 
 		// method stub
-		 ArrayList<String>
-		 a=new
-		 ArrayList<String>();
+		 ArrayList<String> a=new ArrayList<String>();
 		 FileInputStream fis=new FileInputStream(fileName);
 		 XSSFWorkbook workbook=new XSSFWorkbook(fis);
 		 XSSFSheet sheet=workbook.getSheet("Sheet1");
